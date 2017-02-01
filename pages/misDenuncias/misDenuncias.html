@@ -1,0 +1,37 @@
+<ActionBar title="Mis denuncias" class="action-bar"></ActionBar>
+
+<GridLayout rows="auto, *" columns="">
+
+    <!--//Segmented Bar -->
+    
+    <SegmentedBar #tabs [items]="segmentedItems" [selectedIndex]="selectedIndex"></SegmentedBar>
+
+    <!--//ListView -->
+
+    <ListView [items]="listDemands"  class="list-group " row="1" >
+        <template let-item="item">
+          <StackLayout>
+            <GridLayout columns="auto, *, auto">
+                <Image src="res://{{imageVideo}}" col="0" width="120" class="image-video"></Image>
+                
+                <GridLayout rows="auto,auto,auto" col="1">
+
+                    <GridLayout columns="auto, auto" class="m-t-10" row="0">
+                      <Label text="{{hours}}" col="0" class="hour"></Label>
+                      <Label text="{{location}}" col="1" class="place"></Label>
+                    </GridLayout>
+                    
+                    <Label editable="false" text="{{description}}" row="1" class="comments" textWrap="true" height="47"></Label>
+                    <Label [text]="item.name" row="2" class="user pull-left m-b-10" ></Label>
+
+                </GridLayout>
+                
+                <StackLayout col ="2">
+                      <Image src="res://{{iconStatus}}" width="20" class="icon-status"></Image>
+                </StackLayout>
+                
+            </GridLayout>
+          </StackLayout>
+        </template>
+    </ListView>
+</GridLayout>

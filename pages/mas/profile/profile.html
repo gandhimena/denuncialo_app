@@ -1,0 +1,65 @@
+<ActionBar title="Perfil" icon="" class="action-bar">
+  <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+</ActionBar>
+
+<ScrollView orientation="vertical">
+    <StackLayout>
+        <StackLayout class="form">
+                    <!-- Anonimo -->
+            <GridLayout>
+                <Label text="Anónimo" verticalAlignment="center" class = "pull-left" ></Label>
+                <Switch #sw1 col="1" class="switch  pull-right" [checked] = "fSwitchValue" (checkedChange)="FirstCheckChange(sw1.checked)" ></Switch>
+            </GridLayout>
+            <StackLayout class="hr-light"></StackLayout>
+
+            <!-- Status User -->
+            <GridLayout rows="" columns="auto,*" height="138">
+                <Image [src]="defaultPhoto" col="0" class="img-profile" (tap)="changeProfilePhoto()" ></Image>
+                <GridLayout col="1" rows="auto,auto">
+                    <Label row="0" text="{{name}}" class="name pull-left"></Label>
+                    <GridLayout row="1" columns="*,*,*" >
+                        <GridLayout col="0" rows="*,*" >
+                            <Label row="0" text="{{pendientes}}" class="numbers" ></Label>
+                            <Label row="1" text="Pends." class="tipoDenunciaText" ></Label>
+                        </GridLayout>
+                        <GridLayout col="1" rows="*,*">
+                            <Label  row="0"text="{{validados}}" class="numbers"></Label>
+                            <Label row="1" text="Valid." class="tipoDenunciaText"></Label>
+                        </GridLayout>
+                        <GridLayout col="2" rows="*,*">
+                            <Label row="0" text="{{invalidados}}" class="numbers"></Label>
+                            <Label row="1" text="Invalid." class="tipoDenunciaText" ></Label>
+                        </GridLayout>
+                    </GridLayout>
+                </GridLayout>
+            </GridLayout>
+        </StackLayout>
+
+        <!-- Information User -->
+        <FlexboxLayout class="section">
+            <Label text="INFORMACIÓN PRIVADA" class="section-title" ></Label>
+        </FlexboxLayout>
+        <StackLayout class="pull-left">
+            <FlexboxLayout flexDirection="row" flexWrap="wrap">
+                <Image rowSpan="2" src="res://icon_genero" width="30" class="m-15"></Image>
+                <TextField flexGrow="2" hint="genero" class="textField"></TextField>
+                <StackLayout class="hr-light lineBelow"></StackLayout>
+                <Image rowSpan="2" src="res://icon_email" width="30" class="m-15"></Image>
+                <TextField flexGrow="2" hint="email" class="textField"></TextField>
+                <StackLayout class="hr-light lineBelow"></StackLayout>
+            </FlexboxLayout>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>
+
+<!-- Camera 
+    <ScrollView sdkExampleTitle sdkToggleNavButton>
+
+        <FlexboxLayout flexDirection="column-reverse">
+            <Image [src]="imageTaken" flexGrow="2" class="p-15 img-rounded" height="300"></Image>
+            <Button text="Take Photo" class="btn btn-primary btn-active" (tap)="onTakePhoto()" flexGrow="1"></Button>
+        </FlexboxLayout>
+
+    </ScrollView>
+    -->
+

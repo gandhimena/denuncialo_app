@@ -1,0 +1,25 @@
+ActionBar{
+    background-color: deepskyblue;
+    color:white;
+}
+.icon-profile{
+    width:50;
+    margin-left: 10;
+}
+.icons-mas{
+    width:40;
+    margin: 10;
+}
+.text{
+    margin-left: 10;
+}
+.icon-arrow{
+    width:15;
+    margin-right: 10;
+}
+Button{
+    margin-top:50;
+    width: 95%;
+    height: 45;
+    background-color: #F6A623;
+}

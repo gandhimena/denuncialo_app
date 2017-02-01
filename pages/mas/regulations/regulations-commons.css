@@ -1,0 +1,26 @@
+ActionBar{
+    background-color: deepskyblue;
+    color: white;
+}
+.regulations {
+    background-color: black;
+
+}
+.listView {
+    background-image: url("res://reglamento_bg.png");
+    width: 100%;
+    max-height: 100%;
+}
+.rule{
+    margin: 10;
+    margin-top:15;
+}
+.imageRule{
+    width: 63;
+    margin-bottom: 10;
+}
+.titleRule{
+    font-size: 12;
+    color: white;
+
+}

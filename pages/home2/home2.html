@@ -1,0 +1,36 @@
+<ActionBar title="Denúncialo" class="action-bar">
+</ActionBar>
+
+<GridLayout>
+    <ListView [items]="listDemands"  class="list-group" >
+        <template let-item="item">
+          <StackLayout class="info-content" column="auto,*" >
+            <FlexboxLayout>
+                <StackLayout col="0">
+                    <Image src="res://{{imageVideo}}" class="image-video item" width="110" ></Image>
+                </StackLayout>
+                    <StackLayout class="time-content" col="1" >
+                        <FlexboxLayout justifyContent="space-between">
+                            <Label text="2h" class="hour"></Label>
+                            <Label text="Benito Juárez" class="place"></Label>
+                            <StackLayout class="icon-status">
+                                <FlexboxLayout>
+                                    <Image src="res://{{iconStatus}}" width="20" ></Image>
+                                </FlexboxLayout>
+                            </StackLayout>
+                        </FlexboxLayout>
+                        <StackLayout>
+                            <FlexboxLayout flexDirection="column">
+                            <Label [text]="item.description" class="comments" textWrap="true"></Label>
+                        </FlexboxLayout>
+                        <FlexboxLayout>
+                            <Label text="Danielito88" class="user" ></Label>
+                        </FlexboxLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+            </FlexboxLayout>
+          </StackLayout>
+        </template>
+    </ListView>
+</GridLayout>

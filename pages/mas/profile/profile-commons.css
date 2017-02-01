@@ -1,0 +1,46 @@
+.action-bar{
+    background-color:#1DB6F2;
+    color:white; 
+}
+
+
+.content{
+    height: 60;
+}
+.img-profile{
+    margin-right: 10;
+    width: 80;
+    height: 80;
+    border-radius: 40;
+}
+.name{
+    color:#4A4A4A;
+    font-size: 25;
+    margin:14;
+}
+.numbers{
+    color:#FF7C00;
+    font-weight: bold;
+}
+.tipoDenunciaText{
+    color:#C7C7C7;
+}
+.section{
+    background-color:#C7C7C7;
+}
+.section-title{
+    padding-left: 10;
+    width: 100%;
+    height: 45;
+    color:white;
+}
+.icons-section{
+    margin:15;
+}
+.textField{
+    margin-top: 15;
+    margin-bottom: 15;
+}
+.lineBelow{
+    margin-left:60;
+}

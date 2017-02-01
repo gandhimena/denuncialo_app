@@ -1,0 +1,39 @@
+ActionBar{
+    background-color: deepskyblue;
+    color:white;
+}
+.info-content{
+    background-color: yellow;
+}
+.image-video{
+    margin:5,15,5,0;
+
+}
+.time-content{
+    background-color: black;
+}
+.hour{
+    color: lightgray;
+    font-size: 13;
+}
+.place{
+    color: lightgray;
+    font-size: 13;
+}
+.icon-status{
+    margin-top:5;
+    margin-right:115;
+}
+.comments{
+    color: #414E53;
+    font-size: 17;
+    height: 45;
+}
+
+.user{
+    color:lightgray;
+    font-size: 14;
+}
+
+
+

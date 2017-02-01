@@ -1,0 +1,12 @@
+<ActionBar title="Reglamento" class="action-bar">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+</ActionBar>
+
+<ScrollView class="listView">
+    <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="center">
+        <GridLayout rows="auto,*" width="97" class="rule" (tap)="alert()">
+            <Image row="0" src="{{image}}" class="imageRule"></Image>
+            <Label row="1" text="{{title}}" textWrap="true" class="titleRule"></Label>
+        </GridLayout>
+    </FlexboxLayout>
+</ScrollView>
